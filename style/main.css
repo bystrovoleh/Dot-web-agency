@@ -1,0 +1,233 @@
+:root{
+    --color-primary: #DAFD00;
+    --color-bg: #FEF9F0;
+    --color-white: #FFFFFF;
+    --color-gray-200: #D9D9D9;
+    --color-gray-300: #7C7C7C;
+    --color-gray-400: #5A5A5A;
+    --color-gray-500: #363636;
+    --color-black: #000000;
+
+    --font-hellix: Hellix;
+
+    /* Titles */
+    --font-h1-size: 72px;
+    --font-h1-line-height: 86px;
+    --font-h1-weight: 800; /* Extra Bold */
+
+    --font-h2-size: 64px;
+    --font-h2-line-height: 78px;
+    --font-h2-weight: 700; /* Bold */
+
+    --font-h3-size: 56px;
+    --font-h3-line-height: 68px;
+    --font-h3-weight: 700; /* Bold */
+
+    --font-h4-size: 40px;
+    --font-h4-line-height: 48px;
+    --font-h4-weight: 600; /* Bold, SemiBold */
+
+    --font-h5-size: 32px;
+    --font-h5-line-height: 40px;
+    --font-h5-weight: 700; /* Bold */
+
+    --font-h6-size: 24px;
+    --font-h6-line-height: 32px;
+    --font-h6-weight: 700; /* Bold */
+
+    /* Text styles (Body) */
+    --font-body1-size: 24px;
+    --font-body1-line-height: 36px;
+    --font-body1-weight: 500; /* Medium */
+
+    --font-body1-semi-size: 24px;
+    --font-body1-semi-line-height: 36px;
+    --font-body1-semi-weight: 600; /* Semi Bold */
+
+    --font-body2-size: 20px;
+    --font-body2-line-height: 32px;
+    --font-body2-weight: 500; /* Medium */
+
+    --font-body3-size: 18px;
+    --font-body3-line-height: 28px;
+    --font-body3-weight: 500; /* Medium */
+
+    --font-body4-size: 16px;
+    --font-body4-line-height: 24px;
+    --font-body4-weight: 500; /* Medium */
+
+    /* Base styles (Base) */
+    --font-base1-size: 18px;
+    --font-base1-line-height: 24px;
+    --font-base1-weight: 600; /* Semi Bold */
+
+    --font-base2-size: 16px;
+    --font-base2-line-height: 20px;
+    --font-base2-weight: 600; /* Semi Bold */
+
+    --font-base3-size: 14px;
+    --font-base3-line-height: 18px;
+    --font-base3-weight: 600; /* Semi Bold */
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--font-hellix);
+    background-color: var(--color-bg);
+}
+
+/* Title classes */
+.h1 {
+    font-size: var(--font-h1-size);
+    line-height: var(--font-h1-line-height);
+    font-weight: var(--font-h1-weight);
+}
+  
+.h2 {
+    font-size: var(--font-h2-size);
+    line-height: var(--font-h2-line-height);
+    font-weight: var(--font-h2-weight);
+}
+  
+.h3 {
+    font-size: var(--font-h3-size);
+    line-height: var(--font-h3-line-height);
+    font-weight: var(--font-h3-weight);
+}
+  
+.h4 {
+    font-size: var(--font-h4-size);
+    line-height: var(--font-h4-line-height);
+    font-weight: var(--font-h4-weight);
+}
+  
+.h5 {
+    font-size: var(--font-h5-size);
+    line-height: var(--font-h5-line-height);
+    font-weight: var(--font-h5-weight);
+}
+  
+.h6 {
+    font-size: var(--font-h6-size);
+    line-height: var(--font-h6-line-height);
+    font-weight: var(--font-h6-weight);
+}
+  
+/* Text classes */
+.body1 {
+    font-size: var(--font-body1-size);
+    line-height: var(--font-body1-line-height);
+    font-weight: var(--font-body1-weight);
+}
+  
+.body1-semi {
+    font-size: var(--font-body1-semi-size);
+    line-height: var(--font-body1-semi-line-height);
+    font-weight: var(--font-body1-semi-weight);
+}
+  
+.body2 {
+    font-size: var(--font-body2-size);
+    line-height: var(--font-body2-line-height);
+    font-weight: var(--font-body2-weight);
+}
+  
+.body3 {
+    font-size: var(--font-body3-size);
+    line-height: var(--font-body3-line-height);
+    font-weight: var(--font-body3-weight);
+}
+  
+.body4 {
+    font-size: var(--font-body4-size);
+    line-height: var(--font-body4-line-height);
+    font-weight: var(--font-body4-weight);
+}
+  
+.base1 {
+    font-size: var(--font-base1-size);
+    line-height: var(--font-base1-line-height);
+    font-weight: var(--font-base1-weight);
+}
+  
+.base2 {
+    font-size: var(--font-base2-size);
+    line-height: var(--font-base2-line-height);
+    font-weight: var(--font-base2-weight);
+}
+  
+.base3 {
+    font-size: var(--font-base3-size);
+    line-height: var(--font-base3-line-height);
+    font-weight: var(--font-base3-weight);
+}
+
+.container{
+    max-width: 1296px;
+    margin: 0 auto;
+}
+
+a{
+    all: unset;
+    cursor: pointer;
+}
+
+.btn{
+    width: 115px;
+    height: 48px;
+    padding: 24px 12px;
+    border-radius: 48px;
+    border: none;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------Header------------------------------------------------------- */
+
+.header__container{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo__img{
+    padding: 22px 0;
+}
+
+.round-blur{
+    position: absolute;
+    top: -667px;
+    left: 720px;
+    height: 914px;
+    width: 914px;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    filter: blur(300px);
+    z-index: -1;
+}
+
+.navigation__list{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 43px;
+}
+
+.header__menu{
+    display: flex;
+    gap: 48px;
+}
