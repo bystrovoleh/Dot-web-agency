@@ -1,0 +1,85 @@
+@use '../variables/font-variables' as *;
+@use '../mixin/font-mixin.scss' as *;
+
+
+@media(min-width: 320px) and (max-width: 480px) {
+    .schedule__container{
+        padding: 32px 24px;
+
+        .base2{
+            text-align: start;
+            transform: translateX(-159%);
+        }
+    
+        .h3{
+            position: relative;
+            margin-bottom: 32px;
+            z-index: 1; 
+            transform: translateX(1%);
+            font-size: 33px;
+            line-height: 40px;
+        }
+
+        .contact__form{
+            position: relative;
+
+            br{
+                display: block;
+            }
+
+            .body3{
+                font-size: 20px;
+            }
+    
+            .text__input{
+                width: 200px;
+                height: 20px;
+                font-size: 14px;
+                margin-bottom: 24px;
+        
+                &--email{
+                    width: 149px;
+                    height: 20px;
+                    font-size: 14px;
+                    margin-bottom: 40px;
+        
+                }
+            }
+        
+            .select__input{
+                width: 180px;
+                height: 22px;
+                font-size: 14px;
+                margin-bottom: 24px;
+            }
+    
+            .btn{
+                margin-top: 24px;
+                margin-bottom: 48px;
+                width: 368px;
+                height: 52px;
+            }
+        }
+    }
+}
+
+//Talk
+
+@media(min-width: 320px) and (max-width: 480px) {
+    .talk{
+        display: block;
+
+        &__container{
+            padding: 35px 24px;
+            .h2{
+                @include font-style($font-h6); 
+                margin-bottom: 20px;
+                max-width: 274px;
+            }
+        }
+
+        &__container--right{
+            display: none;
+        }
+    }
+}

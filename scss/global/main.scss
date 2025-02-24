@@ -1,0 +1,97 @@
+@use '../variables/font-variables' as *;
+@use '../mixin/font-mixin.scss' as *;
+@use '../variables/color-variables' as *;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    font-family: $font-hellix, sans-serif;;
+    background-color: $color-bg;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.container{
+    width: 100%;
+    max-width: 1296px;
+    margin: 0 auto;
+}
+
+a{
+    all: unset;
+    cursor: pointer;
+}
+
+.h1 {
+    @include font-style($font-h1);
+}
+
+.h1-numbers {
+    @include font-style($font-h1-numbers);
+}
+
+.h2 {
+    @include font-style($font-h2);
+}
+
+.h3 {
+    @include font-style($font-h3);
+}
+
+.h4 {
+    @include font-style($font-h4);
+}
+
+.h5 {
+    @include font-style($font-h5);
+}
+
+.h6 {
+    @include font-style($font-h6);
+}
+
+.h6-numbers {
+    @include font-style($font-h6-numbers);
+}
+
+.body1 {
+    @include font-style($font-body1);
+}
+
+.body2 {
+    @include font-style($font-body2);
+}
+
+.body3 {
+    @include font-style($font-body3);
+}
+
+.body4 {
+    @include font-style($font-body4);
+}
+
+.base-semi {
+    @include font-style($font-body-semi); 
+}
+
+.base1 {
+    @include font-style($font-base1);
+}
+
+.base2 {
+    @include font-style($font-base2);
+}
+
+.base3 {
+    @include font-style($font-base3);
+}
+
+.h1 {
+    @include font-style($font-h1);
+}
+
+

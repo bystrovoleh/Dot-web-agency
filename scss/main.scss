@@ -1,0 +1,14 @@
+//Variables
+@use './variables/font-variables';
+@use './variables/color-variables';
+
+//Global
+@use './global/button.scss';
+@use './global/main.scss';
+
+//Pages
+@use './pages/home.scss';
+@use './responsive-pages/home-responsive.scss';
+@use './pages/contact.scss';
+@use './responsive-pages/contact-responsive.scss';
+@use './pages/about.scss';

@@ -1,0 +1,78 @@
+@use '../variables/color-variables' as *;
+@use '../variables/font-variables' as *;
+
+@use '../mixin/font-mixin.scss' as *;
+
+
+
+.schedule__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 88px;
+
+    .base2{
+        text-align: start;
+        transform: translateX(-372%);
+    }
+
+    .h3{
+        position: relative;
+        margin-bottom: 55px;
+        z-index: 1; 
+        transform: translateX(-16%);
+    }
+
+    .contact__form{
+        position: relative;
+
+        br{
+            display: none;
+        }
+        
+        .text__input{
+            width: 280px;
+            height: 30px;
+            border: none;
+            text-align: center;
+            border-bottom: 1px solid;
+            background-color: $color-bg;
+            font-size: 25px;
+            color: $color-gray-300;
+            margin-bottom: 20px;
+    
+            &--email{
+                width: 470px;
+                height: 30px;
+                border: none;
+                text-align: center;
+                border-bottom: 1px solid;
+                background-color: $color-bg;
+                font-size: 25px;
+                color: $color-gray-300;
+                margin-bottom: 40px;
+    
+            }
+        }
+    
+        .select__input{
+            position: relative;
+            width: 280px;
+            height: 30px;
+            border: none;
+            text-align: center;
+            border-bottom: 1px solid;
+            font-size: 25px;
+            background-color: $color-bg; 
+            color: $color-gray-300;
+        }
+
+        .btn{
+            margin-top: 56px;
+            margin-bottom: 120px;
+            width: 215px;
+        }
+    }
+
+}

@@ -1,0 +1,187 @@
+@use '../mixin/font-mixin.scss' as *;
+
+@include font("Hellix", "Hellix-Regular", 400, normal);
+@include font("Hellix", "Hellix-RegularItalic", 400, italic);
+
+@include font("Hellix", "Hellix-Medium", 500, normal);
+@include font("Hellix", "Hellix-MediumItalic", 500, italic);
+
+@include font("Hellix", "Hellix-SemiBold", 600, normal);
+@include font("Hellix", "Hellix-SemiBoldItalic", 600, italic);
+
+@include font("Hellix", "Hellix-Bold", 700, normal);
+@include font("Hellix", "Hellix-BoldItalic", 700, italic);
+
+@include font("Hellix", "Hellix-ExtraBold", 800, normal);
+@include font("Hellix", "Hellix-ExtraBoldItalic", 800, italic);
+
+@include font("Hellix", "Hellix-Black", 900, normal);
+@include font("Hellix", "Hellix-BlackItalic", 900, italic);
+
+@include font("Hellix", "Hellix-Light", 300, normal);
+@include font("Hellix", "Hellix-LightItalic", 300, italic);
+
+@include font("Hellix", "Hellix-Thin", 200, normal);
+@include font("Hellix", "Hellix-ThinItalic", 200, italic);
+
+// Titles
+$font-h1: (
+  size: 72px,
+  line-height: 86px,
+  weight: 800
+);
+
+$font-h1-resp: (
+  size: 40px,
+  line-height: 46px,
+  weight: 800
+);
+
+$font-h1-numbers: (
+  size: 72px,
+  line-height: 86px,
+  weight: 800
+);
+
+$font-h1-numbers-resp: (
+  size: 48px,
+  line-height: 58px,
+  weight: 800
+);
+
+$font-h2: (
+  size: 64px,
+  line-height: 78px,
+  weight: 700
+);
+
+$font-h3: (
+  size: 56px,
+  line-height: 68px,
+  weight: 700
+);
+
+$font-h4: (
+  size: 40px,
+  line-height: 48px,
+  weight: 600
+);
+
+$font-h5: (
+  size: 32px,
+  line-height: 40px,
+  weight: 700
+);
+
+$font-h5-resp: (
+  size: 28px,
+  line-height: 36px,
+  weight: 700
+);
+
+$font-h6: (
+  size: 24px,
+  line-height: 32px,
+  weight: 700
+);
+
+$font-h6-numbers: (
+  size: 18px,
+  line-height: 22px,
+  weight: 700
+);
+
+$font-h6-resp: (
+  size: 20px,
+  line-height: 24px,
+  weight: 700
+);
+
+$font-h7-resp: (
+  size: 22px,
+  line-height: 30px,
+  weight: 700
+);
+
+$font-h8-resp: (
+  size: 14px,
+  line-height: 16px,
+  weight: 700
+);
+
+// Body text styles
+$font-body1: (
+  size: 24px,
+  line-height: 36px,
+  weight: 500
+);
+
+$font-body1-semi: (
+  size: 24px,
+  line-height: 36px,
+  weight: 600
+);
+
+$font-body-semi: (
+  size: 22px,
+  line-height: 22px,
+  weight: 600
+);
+
+$font-body2: (
+  size: 20px,
+  line-height: 32px,
+  weight: 500
+);
+
+$font-body3: (
+  size: 18px,
+  line-height: 28px,
+  weight: 500
+);
+
+$font-body4: (
+  size: 16px,
+  line-height: 24px,
+  weight: 500
+);
+
+$font-body4-resp: (
+  size: 14px,
+  line-height: 22px,
+  weight: 500
+);
+
+$font-body5-resp: (
+  size: 10px,
+  line-height: 22px,
+  weight: 500
+);
+
+$font-body6-resp: (
+  size: 12px,
+  line-height: 18px,
+  weight: 500
+);
+
+// Base styles
+$font-base1: (
+  size: 18px,
+  line-height: 24px,
+  weight: 600
+);
+
+$font-base2: (
+  size: 16px,
+  line-height: 20px,
+  weight: 600
+);
+
+$font-base3: (
+  size: 14px,
+  line-height: 18px,
+  weight: 600
+);
+
+// Font Family
+$font-hellix: Hellix;

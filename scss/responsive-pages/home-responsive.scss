@@ -1,0 +1,336 @@
+@use '../variables/font-variables' as *;
+@use '../mixin/font-mixin.scss' as *;
+
+//Header
+@media(min-width: 320px) and (max-width: 480px) {
+    .header__container{
+        padding: 10px 16px;
+        margin-bottom: 40px;
+
+        .navigation, .btn{
+            display: none;
+        }
+    }
+
+    .round-blur{
+        top: -298%;
+        left: 50%;
+        height: 300px;
+        width: 300px;
+        filter: blur(150px);
+    }
+
+}
+
+//Hero
+@media(min-width: 320px) and (max-width: 480px) {
+    .h1{
+        @include font-style($font-h1-resp);
+    }
+
+    .h1-numbers{
+        @include font-style($font-h1-numbers-resp);
+    }
+
+    .base2, .body3 {
+        @include font-style($font-body4-resp);
+    }
+
+    .hero__container{
+        padding: 0 24px;
+
+        button:first-of-type{
+            display: flex;
+            width: 130px;
+            height: 40px;
+        }
+
+        h1:last-of-type{
+            margin-bottom: 24px;
+        }
+    }
+
+    .preview{
+        margin-bottom: 40px;
+
+        p:first-child{
+            margin-bottom: 12px;
+            padding-left: 28px;
+
+            &::before{
+                top: 15px;
+                left: 30px;
+                width: 16px;
+            }
+        }
+    }
+
+    .hero__content{
+        display: flex;
+        flex-direction: column;
+
+        .content__row:last-child{
+            order: -1;
+        }
+
+        .ux__logo{
+            width: 34px;
+            height: 34px;
+        }
+
+        .content__item{
+            gap: 40px;
+
+            &:nth-of-type(2), &:nth-of-type(3){
+                gap: 48px;
+            }
+
+            &:nth-of-type(1), &:nth-of-type(2){
+                margin-bottom: 20px;
+            }
+
+            &:nth-of-type(3){
+                margin-bottom: 28px;
+            }
+
+            &:nth-of-type(1) p:last-of-type::after, &:nth-of-type(2) p:last-of-type::after{
+                bottom: -10px;
+                display: block;
+                width: 231px;
+            }
+        
+        }
+    }
+    
+}
+
+//Review
+@media(min-width: 320px) and (max-width: 480px) {
+    .review__container{
+        padding: 62px 24px; 
+
+        .h2{
+            @include font-style($font-h5-resp);
+            max-width: 241px;
+        }
+
+        img{
+            margin-bottom: 24px;
+            max-width: 184px;
+        }
+
+        .round-blur-review{
+            top: 2%;
+            left: -37%;
+            height: 300px;
+            width: 300px;
+            filter: blur(150px);
+        }
+    }
+}
+
+//Interface
+@media(min-width: 320px) and (max-width: 480px) {
+    .interface__container{
+        padding: 24px 24px;
+        display: flex;
+        flex-direction: column;
+
+        .h2{
+            @include font-style($font-h5-resp);
+        }
+
+        .body2{
+            @include font-style($font-body4-resp);
+        }
+
+        .h3{
+            @include font-style($font-h6-resp);
+        }
+
+        .right__container{
+            order: -1;
+
+            .h2{
+                margin-bottom: 8px;
+            }
+
+            p:first-of-type{
+                margin-bottom: 24px;   
+            }
+
+            &-bottom{
+                gap: 21px;
+            }
+        }
+
+        button:first-of-type{
+            display: flex;
+            width: 130px;
+            height: 40px;
+            margin-bottom: 24px;
+        }
+    }
+
+    .int-img{
+        max-width: 327px;
+        margin-left: 40px;
+    }
+}
+
+//Expertise
+
+@media(min-width: 320px) and (max-width: 480px) {
+    .expertise__container{
+        padding: 24px 16px;
+
+        .h2{
+            @include font-style($font-h5-resp); 
+            margin-bottom: 34px;
+        }
+
+        .expertise__row{
+            flex-direction: column;
+
+            .expertise__item{
+                padding: 32px 56px 39px 55px;
+
+                .h5{
+                    @include font-style($font-h7-resp);
+                    margin-bottom: 20px;
+                }
+
+                .base-semi{
+                    @include font-style($font-base3); 
+                }
+            }
+        }
+    }
+}
+
+//FAQ
+
+@media(min-width: 320px) and (max-width: 480px) {
+    .faq__container{
+        padding: 24px 16px;
+        
+        .faq__item{
+            position: relative;
+            padding: 10px 0 10px 0;
+            z-index: 5;
+        }
+        .round-blur{
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            filter: blur(100px);
+            z-index: 1;
+            display: block;
+        }
+
+        .h6-numbers{
+            @include font-style($font-body5-resp);
+        }
+        
+        .h5{
+            @include font-style($font-h8-resp);
+        }
+
+        .body3{
+            @include font-style($font-body6-resp);
+        }
+
+        .faq__item{
+            &--main {
+                .checkbox:checked + .faq__item--hidden{
+                    height: 50px;
+                }
+            }
+        }
+
+        .circle{
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            border: 1px solid;
+
+            .hor_line{
+                width: 5px;
+                height: 1px; 
+            }
+
+            .vert_line{
+                width: 1px;
+                height: 5px; 
+            }
+        }
+
+        .faq__item--main:has(.checkbox:checked) ~ .faq__item--icon > .circle > .vert_line{
+            top: 31%;
+            left: 47%;
+            transform: rotate(90deg);
+            transition: transform 0.2s;
+        }
+    }
+
+    
+}
+
+//Talk
+
+@media(min-width: 320px) and (max-width: 480px) {
+    .talk{
+        display: none;
+    }
+}
+
+//Contact
+
+@media(min-width: 320px) and (max-width: 480px) {
+
+    .contact__container{
+        padding-top: 40px;
+        .h2{
+            @include font-style($font-h6);
+            max-width: 286px;
+            margin-bottom: 24px;
+        }
+
+        .group__imgg{
+            top: 10%;
+            left: 0;
+            height: 96px;
+        }
+    }
+
+    .btn{
+        display: flex;
+    }
+
+    .base2{
+        @include font-style($font-base3); 
+    }
+
+
+}
+
+//Footer
+
+@media(min-width: 320px) and (max-width: 480px) {
+    .footer__container{
+        position: relative;
+        flex-direction: column;
+        padding-top: 65px;
+        padding-bottom: 40px;
+
+        .footer__img{
+            position: absolute;
+            top: 20%;
+            left: 7%;
+            width: 70px;
+        }
+    }
+}

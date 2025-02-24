@@ -1,0 +1,18 @@
+
+@mixin font($name, $file, $weight: 400, $style: normal) {
+    @font-face {
+      font-family: $name;
+      src: url("../../font/#{$file}.woff2") format("woff2"),
+           url("../../font/#{$file}.woff") format("woff");
+      font-weight: $weight;
+      font-style: $style;
+      font-display: swap;
+    }
+}
+
+
+@mixin font-style($font-map) {
+    font-size: map-get($font-map, size);
+    line-height: map-get($font-map, line-height);
+    font-weight: map-get($font-map, weight);
+}

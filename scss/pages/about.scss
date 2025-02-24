@@ -1,0 +1,304 @@
+@use '../variables/color-variables' as *;
+
+// Build
+
+.build__container{
+    padding-top: 97px;
+
+    &--top{
+        display: flex;
+        justify-content: space-between;
+
+        &-left{
+            position: relative;
+            max-width: 539px ;
+
+            .body2:first-of-type{
+                margin-bottom: 16px;
+                padding-left: 60px;
+            }
+
+            .body2:first-of-type::before{
+                content: '';
+                position: absolute;
+                top: 3%;
+                left: 0;
+                width: 48px;
+                height: 2px;
+                display: flex;
+                background-color: $color-black;
+            }
+
+            .h3{
+                margin-bottom: 24px;
+            }
+            .body2:last-of-type{
+                color: $color-gray-400;
+                margin-bottom: 56px;
+
+                span{
+                    color: $color-black;
+                }
+            }
+
+            .btn-navigation{
+                display: flex;
+                align-items: center;
+                margin-bottom: 96px;
+
+                .btn--quote{
+                    background-color: $color-black;
+                    color: $color-white;
+                    margin-right: 28px;
+                }
+
+                .base1{
+                    margin-left: 8px;
+                }
+            }
+        }
+
+
+        &-right{
+            position: relative;
+            z-index: 1;
+
+            .main__img{
+                width: 525px;
+            }
+
+            .back__img{
+                position: absolute;
+                top: 36%;
+                right: 3%;
+                z-index: -1;
+            }
+        }
+    }
+
+    &--bottom {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 77px;
+
+        &-first, &-second, &-third{
+            display: flex;
+            align-items: center;
+        }
+
+        &-first{
+            gap: 25px;
+        }
+
+        &-second, &-third{
+            gap: 33px
+        }
+    }
+}
+
+// Agency
+
+.agency__container{
+    padding: 55px 0;
+    display: flex;
+    justify-content: space-between;
+
+    &-left{
+        position: relative;
+
+        .round-blur{
+            position: absolute;
+            top: -1%;
+            left: -126%;
+            height: 914px;
+            width: 914px;
+            background-color: $color-primary;
+            border-radius: 50%;
+            filter: blur(200px);
+            z-index: 1;
+        }
+
+        .left__img{
+            position: relative;
+            z-index: 1;
+        }
+    }
+
+    &-right{
+        max-width: 533px;
+
+        .h2{
+            margin-bottom: 35px;
+        }
+
+        .body2{
+            color: $color-gray-400;
+        }
+
+        .body2:first-of-type{
+            margin-bottom: 36px;
+        }
+
+        .body2:last-of-type{
+            margin-bottom: 53px;
+        }
+
+        .btn--quote{
+            background-color: $color-black;
+            color: $color-white;
+        }
+
+        span{
+            color: $color-black;
+        }
+    }
+}
+
+// Expertise
+
+.mission__container{
+    position: relative;
+    padding-top: 32px;
+    padding-bottom: 25px;
+    z-index: 1;
+
+    .h2{
+        text-align: center;
+        margin-bottom: 64px;
+    }
+
+    .mission__row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        .mission__item{
+            background-color: $color-black;
+            color: $color-white;
+            padding: 54px 82px 68px 76px;
+            max-width: 552px;
+
+            .body2{
+                margin-bottom: 42px;
+                text-decoration: underline;
+            }
+
+            .h4{
+                margin-bottom: 32px;
+            }
+            
+            .body3{
+                color: $color-gray-200;
+            }
+        }
+
+        .mission__item:last-of-type{
+            background-color: $color-primary;
+            color: $color-black;
+
+            .body3{
+                color: $color-black;
+            }
+        }
+
+    }
+}
+
+//Partners
+
+.partners__container{
+    display: flex;
+    justify-content: space-between;
+    padding: 49px 92px;
+}
+
+//Stylish
+
+.stylish__container{
+    padding-top: 120px;
+    position: relative;
+    z-index: 2;
+
+    .h2{
+        margin-bottom: 96px;
+    }
+
+    &-first, &-second{
+        display: flex;
+        align-items: center;
+        padding: 60px 0;
+
+        .h3{
+            font-size: 150px;
+        }
+
+        .h4{
+            max-width: 714px;
+        }
+    }
+
+    &-first{
+        gap: 94px;
+        border-top: 2px solid $color-black;
+        border-bottom: 2px solid $color-black;
+    }
+
+    &-second{
+        gap: 78px;
+        border-bottom: 2px solid $color-black;
+    }
+}
+
+//Testimonial
+
+.testimonial__container{
+    position: relative;
+    padding: 113px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .round-blur-testimonial{
+        position: absolute;
+        top: 5%;
+        right: -49%;
+        height: 914px;
+        width: 914px;
+        background-color: $color-primary;
+        border-radius: 50%;
+        filter: blur(300px);
+        z-index: 1;
+    }
+
+    .group2__img{
+        position: absolute;
+        top: -3%;
+        right: -23%;
+    }
+
+    .h2{
+        text-align: center;
+        z-index: 1;
+        margin-bottom: 20px;
+    }
+
+    img{
+        margin-bottom: 72px;
+        max-width: 431px;
+        z-index: 2;
+    }
+
+    .video__wrapper {
+        width: 100%;
+        max-width: 1140px;
+        aspect-ratio: 16 / 9;
+        z-index: 1;
+
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
