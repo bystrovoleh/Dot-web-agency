@@ -48,12 +48,6 @@ npm install
 npm start
 ```
 
-4. Build the project for production:
-
-```
-npm run build
-```
-
 ## File Structure
 
 ```
@@ -84,14 +78,11 @@ If you want to contribute:
 4. Push to the branch (`git push origin feature-name`)
 5. Open a Pull Request
 
-## License
-
-This project is licensed under the MIT License.
 
 ## Contact
 
 For any questions or collaborations, feel free to reach out:
 
-- Email: your@email.com
-- GitHub: yourusername
+- Email: bystrov.oleh@gmail.com
+- GitHub: bystrovoleh
 
