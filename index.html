@@ -12,19 +12,32 @@
             <div class="container header__container">
                 <img src="./img/header/Branding.svg" alt="logo" class="logo__img">
                 <nav class="navigation">
+                    <img src="./img/header/Branding-white.svg" alt="" class="logo__img--white">
+                    <div class="navigation__close">
+                        <img src="./img/header/remove.svg" alt="" class="logo__img--delete">
+                    </div>
                     <ul class="navigation__list">
+                        <p class="body3">Menu</p>
                         <li class="navigation__item">
                             <a href="./pages/about.html" class="body4">About</a>
                         </li>
                         <li class="navigation__item">
-                            <a href="" class="body4">Services</a>
+                            <a href="./pages/services.html" class="body4">Services</a>
                         </li>
                         <li class="navigation__item">
-                            <a href="" class="body4">Case-studies</a>
+                            <a href="./pages/case-studies.html" class="body4">Case-studies</a>
                         </li>
                         <li class="navigation__item">
                             <a href="./pages/contact.html" class="body4">Contact</a>
                         </li>
+                        <p class="base3">Get in touch</p>
+                        <p class="body3">hello@tract.agency</p>
+                        <div class="navigation__list-contacts">
+                            <div class="navigation__contacts-item">Dribble</div>
+                            <div class="navigation__contacts-item">Instagram</div>
+                            <div class="navigation__contacts-item">Facebook</div>
+                            <div class="navigation__contacts-item">Clutch</div>
+                        </div>
                     </ul>
                 </nav>
 
@@ -33,7 +46,7 @@
                         Work
                         <img src="./img/header/north_east.svg" alt="">
                     </button>
-                    <img src="./img/header/bugger.svg" alt="">
+                    <img src="./img/header/bugger.svg" alt="" class="nav-menu">
                 </div>
                 <div class="round-blur"></div>
             </div>
@@ -277,5 +290,20 @@
             </div>
         </footer>
     </div>
+
+    <script>
+        const menuButton = document.querySelector('.nav-menu')
+        const menuClose = document.querySelector('.navigation__close')
+        const headerNav = document.querySelector('.navigation')
+
+
+        menuButton.onclick = () => {
+            headerNav.classList.toggle('navigation--mobile')
+        }
+
+        menuClose.onclick = () => {
+            headerNav.classList.remove('navigation--mobile');
+        }
+    </script>
 </body>
 </html>

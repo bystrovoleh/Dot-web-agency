@@ -15,7 +15,7 @@
             position: relative;
             margin-bottom: 32px;
             z-index: 1; 
-            transform: translateX(1%);
+            transform: translateX(-4%);
             font-size: 33px;
             line-height: 40px;
         }
@@ -38,7 +38,7 @@
                 margin-bottom: 24px;
         
                 &--email{
-                    width: 149px;
+                    width: 146px;
                     height: 20px;
                     font-size: 14px;
                     margin-bottom: 40px;
@@ -72,7 +72,9 @@
         &__container{
             padding: 35px 24px;
             .h2{
-                @include font-style($font-h6); 
+                font-size: var(--font-h6-size);
+                line-height: var(--font-h6-line-height);
+                font-weight: var(--font-h6-weight);
                 margin-bottom: 20px;
                 max-width: 274px;
             }

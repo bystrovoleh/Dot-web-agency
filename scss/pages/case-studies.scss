@@ -1,0 +1,69 @@
+@use '../variables/color-variables' as *;
+
+.case-studies__container{
+    position: relative;
+    z-index: 2;
+    padding: 120px 70px;
+
+    .h2{
+        margin-bottom: 24px;
+    }
+
+    .body1{
+        max-width: 897px;
+        color: $color-gray-500;
+    }
+}
+
+.main__container{
+    position: relative;
+    display: flex;
+    gap: 70px;
+    padding: 0 110px;
+
+    .round-blur{
+        position: absolute;
+        top: 19%;
+        left: -46%;    
+        height: 914px;
+        width: 914px;
+        background-color: $color-primary;
+        border-radius: 50%;
+        filter: blur(200px);
+        z-index: 1;
+    }
+
+
+    &-left, &-right{
+        &-item{
+            position: relative;
+            z-index: 5;
+            img{
+                margin-bottom: 32px;
+            }
+
+            .body3{
+                margin-bottom: 16px;
+            }
+
+            .h5{
+                margin-bottom: 32px;
+                max-width: 464px;
+            }
+
+            &--sub{
+                max-width: 165px;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 75px;
+            }
+        } 
+    
+    }
+
+    &-right{
+        padding-top: 135px;
+    }
+
+
+}
