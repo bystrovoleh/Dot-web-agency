@@ -1,10 +1,12 @@
-//Variables
-@use './variables/font-variables';
-@use './variables/color-variables';
-
 //Global
-@use './global/button.scss';
 @use './global/main.scss';
+
+//Component
+@use './component/button.scss';
+
+//Common
+@use './common/header.scss';
+@use './common/footer.scss';
 
 //Pages
 @use './pages/home.scss';

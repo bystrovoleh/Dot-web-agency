@@ -1,5 +1,4 @@
 @use '../variables/font-variables' as *;
-@use '../mixin/font-mixin.scss' as *;
 @use '../variables/color-variables' as *;
 
 //Header
@@ -123,21 +122,18 @@
 //Hero
 @media(min-width: 320px) and (max-width: 480px) {
     .h1{
-        // @include font-style($font-h1-resp);
         font-size: var(--font-h1-resp-size);
         line-height: var(--font-h1-resp--line-height);
         font-weight: var(--font-h1-resp-weight);
     }
 
     .h1-numbers{
-        // @include font-style($font-h1-numbers-resp);
         font-size: var(--font-h1-numbers-size);
         line-height: var(--font-h1-numbers-line-height);
         font-weight: var(--font-h1-numbers-weight);
     }
 
     .base2, .body3 {
-        // @include font-style($font-body4-resp);
         font-size: var(--font-body4-resp-size);
         line-height: var(--font-body4-resp-line-height);
         font-weight: var(--font-body4-resp-weight);
@@ -217,7 +213,6 @@
         padding: 62px 24px; 
 
         .h2{
-            // @include font-style($font-h5-resp);
             font-size: var(--font-h5-resp-size);
             line-height: var(--font-h5-resp-line-height);
             font-weight: var(--font-h5-resp-weight);
@@ -247,21 +242,18 @@
         flex-direction: column;
 
         .h2{
-            // @include font-style($font-h5-resp);
             font-size: var(--font-h5-resp-size);
             line-height: var(--font-h5-resp-line-height);
             font-weight: var(--font-h5-resp-weight);
         }
 
         .body2{
-            // @include font-style($font-body4-resp);
             font-size: var(--font-body4-resp-size);
             line-height: var(--font-body4-resp-line-height);
             font-weight: var(--font-body4-resp-weight);
         }
 
         .h3{
-            // @include font-style($font-h6-resp);
             font-size: var(--font-h6-size);
             line-height: var(--font-h6-line-height);
             font-weight: var(--font-h6-weight);
@@ -304,7 +296,6 @@
         padding: 24px 16px;
 
         .h2{
-            // @include font-style($font-h5-resp); 
             font-size: var(--font-h5-resp-size);
             line-height: var(--font-h5-resp-line-height);
             font-weight: var(--font-h5-resp-weight);
@@ -318,7 +309,6 @@
                 padding: 32px 56px 39px 55px;
 
                 .h5{
-                    // @include font-style($font-h7-resp);
                     font-size: var(--font-h7-resp-size);
                     line-height: var(--font-h7-resp-line-height);
                     font-weight: var(--font-h7-resp-weight);
@@ -326,7 +316,6 @@
                 }
 
                 .base-semi{
-                    // @include font-style($font-base3); 
                     font-size: var(--font-base3-size);
                     line-height: var(--font-base3-line-height);
                     font-weight: var(--font-base3-weight);
@@ -360,21 +349,18 @@
         }
 
         .h6-numbers{
-            // @include font-style($font-body5-resp);
             font-size: var(--font-body5-resp-size);
             line-height: var(--font-body5-resp-line-height);
             font-weight: var(--font-body5-resp-weight);
         }
         
         .h5{
-            // @include font-style($font-h8-resp);
             font-size: var(--font-h8-resp-size);
             line-height: var(--font-h8-resp-line-height);
             font-weight: var(--font-h8-resp-weight);
         }
 
         .body3{
-            // @include font-style($font-body6-resp);
             font-size: var(--font-body6-resp-size);
             line-height: var(--font-body6-resp-line-height);
             font-weight: var(--font-body6-resp-weight);
@@ -431,7 +417,6 @@
     .contact__container{
         padding-top: 40px;
         .h2{
-            // @include font-style($font-h6);
             font-size: var(--font-h6-size);
             line-height: var(--font-h6-line-height);
             font-weight: var(--font-h6-weight);
@@ -451,7 +436,6 @@
     }
 
     .base2{
-        // @include font-style($font-base3); 
         font-size: var(--font-base3-size);
         line-height: var(--font-base3-line-height);
         font-weight: var(--font-base3-weight);
@@ -474,6 +458,10 @@
             top: 20%;
             left: 7%;
             width: 70px;
+        }
+
+        .navigation__list{
+            gap: 31px;
         }
     }
 }

@@ -1,0 +1,53 @@
+@use '../variables/color-variables' as *;
+
+.header__container{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 0;
+}
+
+.navigation{
+    .logo__img--white{
+        display: none;
+    }
+
+    &__close{
+        display: none; 
+    }
+}
+
+.navigation__list{
+    position: relative;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 43px;
+    z-index: 2;
+
+    .body3, .base3, &-contacts{
+        display: none;
+    }
+}
+
+.header__menu{
+    position: relative;
+    display: flex;
+    gap: 48px;
+    z-index: 2;
+}
+
+.round-blur{
+    position: absolute;
+    top: -667%;
+    left: 50%;
+    height: 914px;
+    width: 914px;
+    background-color: $color-primary;
+    border-radius: 50%;
+    filter: blur(200px);
+    z-index: 1;
+}
