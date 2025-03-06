@@ -1,0 +1,276 @@
+@use '../variables/font-variables' as *;
+
+//Tract
+@media(min-width: 320px) and (max-width: 480px) {
+
+    .tract__container{
+        padding: 40px 24px;
+    
+        .h1-portfolio{
+            font-size: var(--font-h1-resp2-size);
+            line-height: var(--font-h1-resp2--line-height);
+            font-weight: var(--font-h1-resp2-weight);
+            margin-bottom: 23px;
+        }
+    
+        .base1{
+            font-size: var(--font-base4-size);
+            line-height: var(--font-base4-line-height);
+            font-weight: var(--font-base4-weight);
+            margin-bottom: 12px;
+        }
+    
+        .h3{
+            font-size: var(--font-h5-resp-size);
+            line-height: var(--font-h5-resp-line-height);
+            font-weight: var(--font-h5-resp-weight);
+            margin-bottom: 16px;
+            max-width: 327px;
+        }
+    
+        .body2{
+            font-size: var(--font-body8-resp-size);
+            line-height: var(--font-body8-resp-line-height);
+            font-weight: var(--font-body8-resp-weight);
+        }
+    }
+
+}
+
+//Presentation
+@media(min-width: 320px) and (max-width: 480px) {
+   
+    .presentation__container{
+        padding: 0 24px;
+
+        .presentation__img2{
+            display: none;
+        }
+
+        .presentation__img1{
+            display: block;
+        }
+    }
+
+}
+
+//Brief
+@media(min-width: 320px) and (max-width: 480px) {
+   
+    .brief__container{
+        padding: 32px 24px;
+
+        &-top{
+            flex-direction: column;
+            padding: 0;
+
+            .round-blur{
+                top: -12%;
+                left: -31%;
+            }
+
+            &-left, &-right{
+                .h4{
+                    font-size: var(--font-h9-resp-size);
+                    line-height: var(--font-h9-resp-line-height);
+                    font-weight: var(--font-h9-resp-weight);
+                    margin-bottom: 8px;
+                }
+
+                .body1{
+                    font-size: var(--font-body8-resp-size);
+                    line-height: var(--font-body8-resp-line-height);
+                    font-weight: var(--font-body8-resp-weight);
+                    margin-bottom: 20px;
+                }
+            }
+
+            &-right{
+
+                .body1{
+                    margin-bottom: 0;
+                }
+
+            }
+        }
+
+        &-bottom{
+            flex-direction: column;
+            padding: 23px 0;
+            margin-bottom: 0px;
+            img{
+                max-width: 327px;
+            }
+        }
+
+    }
+
+}
+
+//Connecting 
+@media(min-width: 320px) and (max-width: 480px) {
+   
+    .connecting__container{
+        padding: 32px 16px;
+
+        .round-blur{
+            top: -26%;
+            left: 42%;
+            height: 300px;
+            width: 300px;
+            filter: blur(150px);
+        }
+
+        &-top{
+            .body1:first-of-type{
+                font-size: var(--font-body9-resp-size);
+                line-height: var(--font-body9-resp-line-height);
+                font-weight: var(--font-body9-resp-weight);
+            }
+
+            .h3{
+                font-size: var(--font-h10-resp-size);
+                line-height: var(--font-h10-resp-line-height);
+                font-weight: var(--font-h10-resp-weight);
+                max-width: 327px;
+            }
+
+            .body1:last-of-type{
+                font-size: var(--font-body8-resp-size);
+                line-height: var(--font-body8-resp-line-height);
+                font-weight: var(--font-body8-resp-weight);
+                max-width: 310px;
+                margin-bottom: 32px;
+            }
+        }
+
+        &-bottom{
+            padding: 0 15px;
+            margin-bottom: 0;
+            img:first-of-type{
+                max-width: 327px;
+            }
+
+            img:nth-child(2){
+                display: none;
+            }
+
+            img:nth-child(3){
+                display: none;
+            }
+
+            img:nth-child(4){
+                display: block;
+            }
+
+            img:nth-child(5){
+                display: block;
+            }
+
+            img{
+                max-width: 153px;
+            }
+
+        }
+    }
+
+}
+
+//Rel-cases 
+@media(min-width: 320px) and (max-width: 480px) {
+    
+    .rel-cases_container{
+        padding: 32px  24px;
+
+        &-item{
+            gap: 38px;
+            .h2-main{
+                font-size: var(--font-h5-size);
+                line-height: var(--font-h5-line-height);
+                font-weight: var(--font-h5-weight);
+            }
+
+            .body1{
+                font-size: var(--font-body10-resp-size);
+                line-height: var(--font-body10-resp-line-height);
+                font-weight: var(--font-body10-resp-weight);
+            }
+
+        }
+
+        &-item:first-of-type{
+            margin-bottom: 48px;
+        }
+
+        &-item:first-of-type::after{
+            width: 340px;
+        }
+
+    }
+
+}
+
+//Studies
+@media(min-width: 320px) and (max-width: 480px) {
+    
+    .studies__container{
+        padding: 24px;
+
+        .round-blur:first-of-type{
+            top: 105%;
+            left: -38%;
+            height: 300px;
+            width: 300px;
+            filter: blur(100px);
+        }
+
+        .round-blur-sec{
+            display: none;
+        }
+
+        .h3{
+            font-size: var(--font-h5-resp-size);
+            line-height: var(--font-h5-resp-line-height);
+            font-weight: var(--font-h5-resp-weight);
+            margin-bottom: 24px;
+        }
+
+        .studies__row{
+            flex-direction: column;
+
+            .studies__item{
+                padding: 20px;
+                
+                &-sub{
+                    margin-bottom: 26px;
+                    .body2{
+                        font-size: var(--font-base4-size);
+                        line-height: var(--font-base4-line-height);
+                        font-weight: var(--font-base4-weight);
+                    }
+
+                    .base7{
+                        font-size: var(--font-base8-size);
+                        line-height: var(--font-base8-line-height);
+                        font-weight: var(--font-base8-weight);
+                    }
+
+                }
+
+                .h5{
+                    font-size: var(--font-h10-resp2-size);
+                    line-height: var(--font-h10-resp2-line-height);
+                    font-weight: var(--font-h10-resp2-weight);
+                    max-width: 287px;
+                    margin-bottom: 20px;
+                }
+
+                &-sub:last-of-type{
+                    max-width: 135px;
+                }
+
+            }
+        }
+    }
+
+}

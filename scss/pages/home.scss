@@ -218,15 +218,8 @@
     padding-bottom: 147px;
 
     .round-blur{
-        position: absolute;
         top: 115%;
         left: 67%;
-        height: 914px;
-        width: 914px;
-        background-color: $color-primary;
-        border-radius: 50%;
-        filter: blur(200px);
-        z-index: 1;
     }
 }
 
@@ -387,6 +380,10 @@
         span{
             text-decoration: underline;
         }
+    }
+
+    .btn{
+        width: 175px;
     }
 }
 

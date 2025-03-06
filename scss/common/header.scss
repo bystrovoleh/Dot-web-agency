@@ -41,13 +41,6 @@
 }
 
 .round-blur{
-    position: absolute;
     top: -667%;
     left: 50%;
-    height: 914px;
-    width: 914px;
-    background-color: $color-primary;
-    border-radius: 50%;
-    filter: blur(200px);
-    z-index: 1;
 }

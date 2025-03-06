@@ -1,12 +1,13 @@
 //Global
 @use './global/main.scss';
 
-//Component
-@use './component/button.scss';
-
 //Common
 @use './common/header.scss';
 @use './common/footer.scss';
+
+//Component
+@use './component/button.scss';
+@use './component/round-blur.scss';
 
 //Pages
 @use './pages/home.scss';
@@ -16,5 +17,6 @@
 @use './pages/about.scss';
 @use './responsive-pages/about-responsive.scss';
 @use './pages/services.scss';
-
+@use './responsive-pages/services-responsive.scss';
 @use './pages/case-studies.scss';
+@use './responsive-pages/case-studies-responsive.scss';

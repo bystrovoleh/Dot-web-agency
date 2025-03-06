@@ -107,15 +107,8 @@
         position: relative;
 
         .round-blur{
-            position: absolute;
             top: -1%;
             left: -126%;
-            height: 914px;
-            width: 914px;
-            background-color: $color-primary;
-            border-radius: 50%;
-            filter: blur(200px);
-            z-index: 1;
         }
 
         .left__img{
@@ -275,7 +268,7 @@
     .group2__img{
         position: absolute;
         top: -3%;
-        right: -23%;
+        right: -24%;
     }
 
     .h2{

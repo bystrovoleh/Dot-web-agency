@@ -24,164 +24,6 @@
 @include font("Hellix", "Hellix-Thin", 200, normal);
 @include font("Hellix", "Hellix-ThinItalic", 200, italic);
 
-// // Titles
-// $font-h1: (
-//   size: 72px,
-//   line-height: 86px,
-//   weight: 800
-// );
-
-// $font-h1-resp: (
-//   size: 40px,
-//   line-height: 46px,
-//   weight: 800
-// );
-
-// $font-h1-numbers: (
-//   size: 72px,
-//   line-height: 86px,
-//   weight: 800
-// );
-
-// $font-h1-numbers-resp: (
-//   size: 48px,
-//   line-height: 58px,
-//   weight: 800
-// );
-
-// $font-h2: (
-//   size: 64px,
-//   line-height: 78px,
-//   weight: 700
-// );
-
-// $font-h3: (
-//   size: 56px,
-//   line-height: 68px,
-//   weight: 700
-// );
-
-// $font-h4: (
-//   size: 40px,
-//   line-height: 48px,
-//   weight: 600
-// );
-
-// $font-h5: (
-//   size: 32px,
-//   line-height: 40px,
-//   weight: 700
-// );
-
-// $font-h5-resp: (
-//   size: 28px,
-//   line-height: 36px,
-//   weight: 700
-// );
-
-// $font-h6: (
-//   size: 24px,
-//   line-height: 32px,
-//   weight: 700
-// );
-
-// $font-h6-numbers: (
-//   size: 18px,
-//   line-height: 22px,
-//   weight: 700
-// );
-
-// $font-h6-resp: (
-//   size: 20px,
-//   line-height: 24px,
-//   weight: 700
-// );
-
-// $font-h7-resp: (
-//   size: 22px,
-//   line-height: 30px,
-//   weight: 700
-// );
-
-// $font-h8-resp: (
-//   size: 14px,
-//   line-height: 16px,
-//   weight: 700
-// );
-
-// // Body text styles
-// $font-body1: (
-//   size: 24px,
-//   line-height: 36px,
-//   weight: 500
-// );
-
-// $font-body1-semi: (
-//   size: 24px,
-//   line-height: 36px,
-//   weight: 600
-// );
-
-// $font-body-semi: (
-//   size: 22px,
-//   line-height: 22px,
-//   weight: 600
-// );
-
-// $font-body2: (
-//   size: 20px,
-//   line-height: 32px,
-//   weight: 500
-// );
-
-// $font-body3: (
-//   size: 18px,
-//   line-height: 28px,
-//   weight: 500
-// );
-
-// $font-body4: (
-//   size: 16px,
-//   line-height: 24px,
-//   weight: 500
-// );
-
-// $font-body4-resp: (
-//   size: 14px,
-//   line-height: 22px,
-//   weight: 500
-// );
-
-// $font-body5-resp: (
-//   size: 10px,
-//   line-height: 22px,
-//   weight: 500
-// );
-
-// $font-body6-resp: (
-//   size: 12px,
-//   line-height: 18px,
-//   weight: 500
-// );
-
-// // Base styles
-// $font-base1: (
-//   size: 18px,
-//   line-height: 24px,
-//   weight: 600
-// );
-
-// $font-base2: (
-//   size: 16px,
-//   line-height: 20px,
-//   weight: 600
-// );
-
-// $font-base3: (
-//   size: 14px,
-//   line-height: 18px,
-//   weight: 600
-// );
 
 :root {
   /* Заголовки */
@@ -192,6 +34,10 @@
   --font-h1-resp-size: 40px;
   --font-h1-resp--line-height: 46px;
   --font-h1-resp-weight: 800; /* Extra Bold */
+
+  --font-h1-resp2-size: 20px;
+  --font-h1-resp2--line-height: 24px;
+  --font-h1-resp2-weight: 800; /* Extra Bold */
 
   --font-h1-portfolio-size: 40px;
   --font-h1-portfolio--line-height: 46px;
@@ -261,6 +107,18 @@
   --font-h8-resp-line-height: 16px;
   --font-h8-resp-weight: 700; /* Bold */
 
+  --font-h9-resp-size: 20px;
+  --font-h9-resp-line-height: 28px;
+  --font-h9-resp-weight: 700; /* Bold */
+
+  --font-h10-resp-size: 26px;
+  --font-h10-resp-line-height: 34px;
+  --font-h10-resp-weight: 700; /* Bold */
+
+  --font-h10-resp2-size: 22px;
+  --font-h10-resp2-line-height: 26px;
+  --font-h10-resp2-weight: 700; /* Bold */
+
   /* Текстовые стили (Body) */
   --font-body1-size: 24px;
   --font-body1-line-height: 36px;
@@ -314,6 +172,18 @@
   --font-body7-resp-line-height: 20px;
   --font-body7-resp-weight: 500; /* Medium */
 
+  --font-body8-resp-size: 14px;
+  --font-body8-resp-line-height: 22px;
+  --font-body8-resp-weight: 500; /* Medium */
+
+  --font-body9-resp-size: 12px;
+  --font-body9-resp-line-height: 14px;
+  --font-body9-resp-weight: 500; /* Medium */
+
+  --font-body10-resp-size: 12px;
+  --font-body10-resp-line-height: 16px;
+  --font-body10-resp-weight: 500; /* Medium */
+
   /* Базовые стили (Base) */
   --font-base1-size: 18px;
   --font-base1-line-height: 24px;
@@ -342,6 +212,10 @@
   --font-base7-size: 18px;
   --font-base7-line-height: 22px;
   --font-base7-weight: 600; /* Semi Bold */
+
+  --font-base8-size: 14px;
+  --font-base8-line-height: 17px;
+  --font-base8-weight: 600; /* Semi Bold */
 
 }
 // Font Family

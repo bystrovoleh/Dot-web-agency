@@ -1,6 +1,7 @@
 @use '../variables/color-variables' as *;
 
 .btn{
+    position: relative;
     width: 115px;
     height: 48px;
     padding: 24px 12px;
@@ -13,7 +14,7 @@
     justify-content: center;
     gap: 8px;
     cursor: pointer;
-    z-index: 1;
+    z-index: 5;
 
     &--quote{
         width: 194px;

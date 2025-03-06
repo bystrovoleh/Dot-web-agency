@@ -26,6 +26,10 @@
 
     .contact__form{
         position: relative;
+        
+        .round-blur{
+            display: none;
+        }
 
         br{
             display: none;

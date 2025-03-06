@@ -1,0 +1,98 @@
+@use '../variables/color-variables' as *;
+
+
+@media(min-width: 320px) and (max-width: 480px) {
+    .case-studies__container{
+        padding: 60px 24px 40px 24px;
+
+        .h2{
+            font-size: var(--font-h5-resp-size);
+            line-height: var(--font-h5-resp-line-height);
+            font-weight: var(--font-h5-resp-weight);
+        }
+        
+        .body1{
+            display: none;
+        }
+        
+    }
+}
+
+@media(min-width: 320px) and (max-width: 480px) {
+    .main__container{
+        flex-direction: column;
+        padding: 0 24px;
+        gap: 0;
+    
+        .round-blur{
+            top: 22%;
+            left: -33%;
+            height: 300px;
+            width: 300px;
+            filter: blur(100px);
+        }
+    
+        .round-blur:nth-child(2){
+            display: flex;
+            top: 57%;
+            left: 49%;
+            height: 300px;
+            width: 300px;
+            filter: blur(100px);
+        }
+    
+        &-left, &-right{
+            &-item{
+                position: relative;
+                z-index: 5;
+                img{
+                    margin-bottom: 24px;
+                    max-width: 327px;
+                }
+    
+                .body3{
+                    margin-bottom: 16px;
+                    font-size: var(--font-base8-size);
+                    line-height: var(--font-base8-line-height);
+                    font-weight: var(--font-base8-weight);
+                }
+    
+                .h5{
+                    margin-bottom: 16px;
+                    font-size: var(--font-h9-resp-size);
+                    line-height: var(--font-h9-resp-line-height);
+                    font-weight: var(--font-h9-resp-weight);
+                }
+    
+                &--sub{
+                    margin-bottom: 40px;
+                    max-width: 130px;
+    
+                    .base7{
+                        font-size: var(--font-base8-size);
+                        line-height: var(--font-base8-line-height);
+                        font-weight: var(--font-base8-weight);
+                    }
+    
+                    img{
+                        max-width: 15px;
+                    }
+                }
+            } 
+        
+        }
+    
+        &-right{
+            padding-top: 0;
+    
+            .round-blur{
+                top: 105%;
+                left: 69%;
+                height: 300px;
+                width: 300px;
+                filter: blur(100px);
+            }
+        }
+    }
+}
+
