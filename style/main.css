@@ -648,6 +648,9 @@ a {
   .modal--mobile__content {
     margin: 0 10px;
   }
+  .modal--mobile__content .text__input {
+    padding: 0 10px 0 70px !important;
+  }
   .submit__form--submited {
     margin: 0px 7px;
     width: 95%;
