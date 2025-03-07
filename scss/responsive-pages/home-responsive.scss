@@ -407,6 +407,11 @@
 @media(min-width: 320px) and (max-width: 480px) {
     .talk{
         display: none;
+
+        .btn--quote{
+            width: 175px;
+            height: 48px;
+        }
     }
 }
 

@@ -546,6 +546,116 @@ a {
   z-index: 1;
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal--mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal--mobile__content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  text-align: center;
+  position: relative;
+}
+.modal--mobile__content .h4 {
+  margin-bottom: 30px;
+}
+.modal--mobile__content .form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.modal--mobile__content .form__item {
+  position: relative;
+}
+.modal--mobile__content .form__item-span {
+  position: absolute;
+  left: 19%;
+  top: 13%;
+  transition: top 0.6s, font-size 0.6s;
+  background-color: #FFFFFF;
+}
+.modal--mobile__content .form__item .text__input {
+  padding: 0 10px 0 60px;
+  outline: none;
+  width: 250px;
+  height: 30px;
+  text-align: left;
+  border-radius: 10px;
+  border: 1px solid #000000;
+  color: #7C7C7C;
+  margin-bottom: 10px;
+}
+.modal--mobile__content .form__item .text__input:focus {
+  border: 3px solid #DAFD00;
+}
+.modal--mobile__content .form__item .text__input:focus + .form__item-span {
+  top: -11%;
+  font-size: 10px;
+  color: #DAFD00;
+}
+.modal--mobile__content .form .btn {
+  padding: 0;
+  height: 32px;
+  width: 100px;
+}
+.modal--mobile__content .close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.submit__form {
+  display: none;
+  position: relative;
+}
+.submit__form--submited {
+  display: flex;
+  position: fixed;
+  bottom: 1%;
+  right: 1%;
+  z-index: 1000;
+  padding: 20px;
+  background-color: #FFFFFF;
+  width: 500px;
+  border-radius: 20px;
+  box-shadow: 15px 15px 34px -14px rgba(0, 0, 0, 0.75);
+}
+.submit__form--submited .close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .modal--mobile__content {
+    margin: 0 10px;
+  }
+  .submit__form--submited {
+    margin: 0px 7px;
+    width: 95%;
+  }
+  .submit__form--submited .h6 {
+    font-size: 15px;
+  }
+}
 .hero__container {
   position: relative;
   padding-top: 96px;
@@ -1183,6 +1293,10 @@ a {
 @media (min-width: 320px) and (max-width: 480px) {
   .talk {
     display: none;
+  }
+  .talk .btn--quote {
+    width: 175px;
+    height: 48px;
   }
 }
 @media (min-width: 320px) and (max-width: 480px) {
@@ -2274,7 +2388,7 @@ a {
 
 @media (min-width: 320px) and (max-width: 480px) {
   .case-studies__container {
-    padding: 60px 24px 40px 24px;
+    padding: 20px 24px 40px 24px;
   }
   .case-studies__container .h2 {
     font-size: var(--font-h5-resp-size);
@@ -2288,7 +2402,7 @@ a {
 @media (min-width: 320px) and (max-width: 480px) {
   .main__container {
     flex-direction: column;
-    padding: 0 24px;
+    padding: 0px 24px 0 31px;
     gap: 0;
   }
   .main__container .round-blur {
